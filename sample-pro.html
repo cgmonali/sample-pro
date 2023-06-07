@@ -43,6 +43,9 @@ var headerTitle=document.getElementById('header-title');
 var header=document.getElementById('main-header');
 var additem=document.getElementById('header-title');
 var item=document.getElementById('main');
+var thirditem=document.getElementById('items')
+var allitems=document.getElementsByClassName('list-group-item');
+
 // console.log(headerTitle);
 // headerTitle.textContent='hello';
 //textContent actually  pays attention to styling
@@ -53,6 +56,11 @@ var item=document.getElementById('main');
 header.style.borderBottom='solid 3px #000';
 item.firstElementChild.style.font=' bold 30px arial,serifd ';
 item.firstElementChild.style.color='green';
+allitems[2].style.backgroundColor='green';
+for(var i=0;i<allitems.length;i++){
+  allitems[i].style.font=' bold 15px arial,serifd '
+}
+
 
   </script>
 
