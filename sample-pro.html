@@ -27,7 +27,9 @@
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
       <!-- <li>Item 5</li> -->
+      
     </ul>
+    <span>hello</span>
    </div>
   </div>
   <script>
@@ -40,13 +42,13 @@
 //    console.log(document.forms);
 
 // console.log(document.getElementById('header-title'));
-var headerTitle=document.getElementById('header-title');
-var header=document.getElementById('main-header');
-var additem=document.getElementById('header-title');
-var item=document.getElementById('main');
-var thirditem=document.getElementById('items')
-var allitems=document.getElementsByClassName('list-group-item');
-var fiveitems=document.getElementsByTagName('li');
+// var headerTitle=document.getElementById('header-title');
+// var header=document.getElementById('main-header');
+// var additem=document.getElementById('header-title');
+// var item=document.getElementById('main');
+// var thirditem=document.getElementById('items')
+// var allitems=document.getElementsByClassName('list-group-item');
+// var fiveitems=document.getElementsByTagName('li');
 
 // console.log(headerTitle);
 // headerTitle.textContent='hello';
@@ -58,15 +60,53 @@ var fiveitems=document.getElementsByTagName('li');
 // header.style.borderBottom='solid 3px #000';
 // item.firstElementChild.style.font=' bold 30px arial,serifd ';
 // item.firstElementChild.style.color='green';
-allitems[1].style.backgroundColor='green';
-// for(var i=0;i<allitems.length;i++){
-//   allitems[i].style.font=' bold 15px arial,serifd '
-// }
-allitems[2].style.visibility='hidden';
+// allitems[1].style.backgroundColor='green';
+// // for(var i=0;i<allitems.length;i++){
+// //   allitems[i].style.font=' bold 15px arial,serifd '
+// // }
+// allitems[2].style.visibility='hidden';
 
 // for(var i=0;i<fiveitems.length;i++){
 //   fiveitems[i].style.color=' red ';
 // }
+
+//TRAVERSING THE DOM
+
+var thirditem=document.getElementById('items')
+thirditem.parentElement.style.color='blue';
+thirditem.childNodes[1].style.color='red';
+thirditem.children[2].style.color='red';
+console.log(thirditem.firstChild);
+
+thirditem.firstElementChild.style.color='purple';
+console.log(thirditem.lastChild);
+thirditem.lastElementChild.style.textContent='hello';
+console.log(thirditem.nextSibling);
+thirditem.nextElementSibling.style.backgroundColor='yellow' ;
+console.log(thirditem.previousSibling);
+thirditem.previousElementSibling.style.color='green';
+
+const newElement = document.createElement("div");
+
+    // Set an attribute on the new element
+    newElement.setAttribute("class", "my-class");
+
+    // Create a new text node
+    const newText = document.createTextNode("Hello, world!");
+    newElement.setAttribute('title','hello');
+
+    // Append the text node to the new element
+    console.log(newElement.appendChild(newText));
+   console.log(newElement);
+
+
+
+
+
+
+
+   
+
 
 
   </script>
