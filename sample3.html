@@ -113,7 +113,7 @@ function filterItems(e){
   Array.from(items).forEach(function(item){
 var itemName=item.firstChild.textContent;
 var secItemName=item.firstChild.nextSibling.textContent;
-console.log(itemName);
+
 if(itemName.toLowerCase().indexOf(text)!=-1||secItemName.toLowerCase().indexOf(text)!=-1){
   item.style.display='block';
 }
