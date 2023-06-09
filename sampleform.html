@@ -34,10 +34,10 @@
         </form>
         <h2 class="title">Items</h2>
         <ul id="items" class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">Item 1<div class="btn-group"><button class="btn btn-success btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Item 2<div class="btn-group"><button class="btn btn-success btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Item 3<div class="btn-group"><button class="btn btn-success btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Item 4<div class="btn-group"><button class="btn btn-success btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Item 1<div class="btn-group"><button class="btn btn-primary btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Item 2<div class="btn-group"><button class="btn btn-primary btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Item 3<div class="btn-group"><button class="btn btn-primary btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Item 4<div class="btn-group"><button class="btn btn-primary btn-sm mr-2 edit">Edit</button> <button class="btn btn-danger btn-sm delete">X</button></div></li>
         </ul>
        </div>
       </div>
@@ -76,7 +76,7 @@ function addItem(e){
 
   var editBtn = document.createElement('button');
 
-editBtn.className = 'btn btn-success btn-sm mr-2 edit';
+editBtn.className = 'btn btn-primary btn-sm mr-2 edit';
 
 editBtn.appendChild(document.createTextNode('edit'));
 div.appendChild(editBtn);
